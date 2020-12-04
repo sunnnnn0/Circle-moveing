@@ -1,0 +1,63 @@
+/* layout */
+#conents {}
+#section1 {height: 4000px;}
+#section2 {height: 3000px;}
+#section3 {height: 5000px; background: #ccc;}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* center */
+.center {
+    position: fixed; left: 50vw; top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+/* sec1 */
+.sec1 {}
+.sec1 h1 {
+    font-size: 6vw;
+    line-height: 1.2;
+    color: #222;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translate(-50%, -30vh);
+    display: none;
+}
+.sec1 .cirele1 {
+    background: #E9E2D1; width: 50vw; height: 50vw;
+    border-radius: 50%;
+    transform: translate(-120%, 0%);
+    display: none;
+}
+.sec1 .cirele2 {
+    background: #E3BF64; width: 50vw; height: 50vw;
+    border-radius: 50%;
+    transform: translate(20%, 0%);
+    display: none;
+}
+
+.box {
+    width: 500px; height: 500px; border-radius: 50%;
+    position: fixed; 
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    transform-origin: center center;
+    background: url(https://images.unsplash.com/photo-1532617594752-ae07aeaf1276?ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80) fixed;
+    background-size: cover;
+    
+}
+
+
+
+
+
+
+

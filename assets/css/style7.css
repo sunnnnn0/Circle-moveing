@@ -1,0 +1,407 @@
+/*
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Iropke Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot);
+  src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot?#iefix) format('embedded-opentype'),
+       url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff) format('woff'),
+       url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.ttf) format('truetype');
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    
+}
+
+/* layout */
+#conents {}
+#section1 {height: 4000px;}
+#section2 {height: 8500px; background: red;}
+/*
+#section3 {height: 32000px; background: blue;}
+#section4 {height: 3000px; background: blue}
+*/
+#section5 {}
+#section6 {}
+
+.center {
+    position: fixed; left: 50vw; top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+/* scroll */
+.scroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    width: 3vw;
+    height: 3vw;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 3vw;
+    color: #fff;
+}
+
+/*==========================================================
+========================== sec1 ==========================*/
+.sec1 {
+}
+.sec1 .arrow_down {
+    transform: translate(-1%, 4vh);
+}
+.sec1 .arrow_down img {
+    transform: translate(-50%, 20vh);
+    z-index: 1;
+    width: 6vw;
+    color: #6F7465;
+}
+
+.arrow {
+    align-self: flex-end;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transform-origin: top;
+}
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-30px); }
+    100% { transform: translateY(0); }
+}
+.sec1 h1 {
+    font-size: 5vw;
+    line-height: 1.2;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    transform: translate(-50%, -50vh);
+}
+.sec1 .circle1 {
+    background: #000; 
+    width: 60vw; 
+    height: 60vw;
+    border-radius: 50%;
+}
+.sec1 .circle1 svg {
+    position: absolute;
+    top: 0.4vw;
+    left: 1vw;
+    width: 22vw;  
+}
+.sec1 .circle2 {
+    background: #262626; 
+    width: 60vw; 
+    height: 60vw;
+    border-radius: 50%;
+}
+.sec1 .square {
+    position: fixed;
+    bottom: 0.5vw;
+    right: -30vw;
+    width: 24vw;
+    height: 24vw;
+    background: #3C3C3C;   
+}
+.sec1 .triangle {
+    position: fixed;
+    bottom: 0.5vw;
+    right: -40vw;
+    width: 0px;height: 0px;
+    border-top:24vw solid none;
+    border-bottom:24vw  solid #262626;
+    border-right: 17vw  solid transparent;
+    border-left: 17vw  solid  transparent;
+}
+.sec1 .square2 {
+    position: fixed;
+    bottom: 0.5vw;
+    right: -30vw;
+    width: 24vw;
+    height: 24vw;
+    background: #3C3C3C;   
+}
+.sec1 .circle3 {
+    background: #262626; 
+    width: 24vw; 
+    height: 24vw;
+    border-radius: 50%;
+    transform: translate(18%, -20%);
+}
+.sec1 .square3 {
+    position: fixed;
+    bottom: 0.5vw;
+    right: -30vw;
+    width: 24vw;
+    height: 24vw;
+    background: #3C3C3C;   
+}
+.sec1 .circle2 h3,
+.sec1 .circle3 h3,
+.sec1 .square h3,
+.sec1 .square2 h3,
+.sec1 .square3 h3,
+.sec1 .triangle h3 {
+    padding-top: 6vw;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+.sec1 .circle2 p,
+.sec1 .circle3 p,
+.sec1 .square p,
+.sec1 .square2 p,
+.sec1 .square3 p,
+.sec1 .triangle p {
+    position: absolute;
+    right: 2vw;
+    width: 20vw;
+    padding-top: 2vw;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+.sec1 .triangle h3 {
+    position: absolute;
+    top: 16vw;
+    right: -10vw;
+    width: 20vw;
+}
+.sec1 .triangle p {
+    width: 14vw;
+    position: absolute;
+    bottom: -15.9vw;
+    right: -7vw;
+}
+
+/*==========================================================
+========================== sec2 ==========================*/
+.sec2{
+
+}
+.sec2 .about {
+    position: relative;
+    width: 100vw;
+    height: 600vh;
+    background: #000; 
+    box-sizing: border-box;
+
+} 
+.sec2 .into_wrap {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+    
+.sec2 .into_about {
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+}
+.sec2 .about_bg_circle1,
+.sec2 .about_bg_circle2,
+.sec2 .about_bg_circle3,
+.sec2 .about_bg_circle4,
+.sec2 .about_bg_circle5 {
+    background: #fff;
+    border: 1px solid #EBEBEB;
+    border-radius: 50%;
+}
+.sec2 .about_bg_circle1 {
+    width: 110vw;
+    height: 110vw;
+}
+.sec2 .about_bg_circle2 {
+    width: 90vw;
+    height: 90vw;
+}
+.sec2 .about_bg_circle3 {
+    width: 70vw;
+    height: 70vw;
+}
+.sec2 .about_bg_circle4 {
+    width: 50vw;
+    height: 50vw;
+}
+.sec2 .about_bg_circle5 {
+    width: 30vw;
+    height: 30vw;
+}
+.sec2 .about_img_circle img {
+    width: 14vw;
+    height: 14vw;
+    border-radius: 50%;
+    border: 1px solid #939393;
+}
+.sec2 .about_circle1,
+.sec2 .about_circle2 {
+    width: 14vw;
+    height: 14vw;
+    background: #fff;
+    border: 1px solid #939393;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sec2 .about_circle1 p,
+.sec2 .about_circle2 p {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5vw;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 6vw;
+}
+.sec2 .about_circle_line {
+    width: 18vw;
+    border: 0.1px solid #939393;
+}
+.sec2 .about_txt strong {
+    font-family: 'Merriweather', serif;
+    font-size: 2vw;
+}
+.sec2 .about_txt p {
+    padding-top: 1vw;
+    width: 28.5vw;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 0.8vw;
+    font-weight: 700;
+    line-height: 2;
+    color: #757575;
+}
+.sec2 .about_last_circle {
+    width: 14vw;
+    height: 14vw;
+    background: #fff;
+    border-radius: 50%;
+}
+
+/*==========================================================
+========================== sec3 ==========================*/
+.sec3 .work {
+    position: relative;
+    width: 100vw;
+    height: 600vh;
+    background: #fff; 
+    box-sizing: border-box;
+} 
+.sec3 .into_wrap {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+}
+    
+.sec3 .into_work {
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+.sec3 .work_box {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    left: 50vw;
+}
+.sec3 .box_left {
+    width: 50vw;
+    height: 100vh;
+    background: #000;
+    left: 25vw;
+}
+.sec3 .box_reight {
+    width: 50vw;
+    height: 100vh;
+    background: #000;
+    left: 75vw;
+}
+.sec3 .work_txt_first p {
+    font-size: 6vw;
+    color: #000;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sec3 .work_txt_first p:nth-child(1) {
+    left: 18vw;
+}
+.sec3 .work_txt_first p:nth-child(2) {
+    left: 50vw;
+}
+.sec3 .work_txt_first p:nth-child(3) {
+    left: 82vw;
+}
+.sec3 .work_txt p {
+    font-size: 6vw;
+    color: #000;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.sec3 .project {
+   
+}
+.sec3 .project .box {
+    position: fixed; 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    transform-origin: center center;
+    background: url(/port/assets/img/qq.png) no-repeat fixed;
+    background-size: cover;
+    clip-path: circle(20vw at center);
+}
+.sec4 .animation p {
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

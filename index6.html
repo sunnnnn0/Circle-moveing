@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style6.css">
+    
+    <!-- webfotns -->
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<!--
+    <div class="box" 
+        data-0 = "width: 3000px; height: 3000px; background-position: 0px 0vh; border-radius: 0%;"
+        data-1000 = "width: 900px; height: 900px;  background-position: 0px 0vh; border-radius: 50%;"
+        data-1300 = "width: 900px; height: 900px;  background-position: 0px 0vh; border-radius: 50%;"
+        
+        data-2000 = "width: 900px; height: 900px;  background-position: 0px -120vh; border-radius: 50%;"
+  ></div>
+-->
+    <div class="box " 
+        data-0 = "clip-path: circle(100vw at center);background-position: 0px 0vh; "
+        data-1000 = "clip-path: circle(20vw at center);  background-position: 0px 0vh;"
+        data-1100 = "clip-path: circle(20vw at center); background-position: 0px -10vh;"
+        data-1500 = "clip-path: circle(20vw at center); background-position: 0px -10vh;"
+        data-2500 = "clip-path: circle(20vw at center); background-position: 0px -114vh; "   
+        data-3500 = "clip-path: circle(20vw at center); background-position: 0px -114vh; "
+        data-4500 = "clip-path: circle(20vw at center); background-position: 0px -220vh; "
+        data-5500 = "clip-path: circle(20vw at center); background-position: 0px -220vh; "        
+  ></div>
+    
+    <script src="assets/js/jquery.min_1.12.4.js"></script>
+    <script src="assets/js/skrollr.min.js"></script>
+    <script>
+        //skrollr
+        var s = skrollr.init({
+            edgeStrategy: 'set',
+            easing: 'linear'
+        });
+        
+        $(window).scroll(function(){
+            let scroll = $(window).scrollTop();
+
+        });
+    </script>
+</body>
+</html>
+
+<!-- https://krkr.design/?ref=lapaninja -->
+

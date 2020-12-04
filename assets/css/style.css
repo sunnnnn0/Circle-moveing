@@ -1,0 +1,348 @@
+body {
+    font-family: "Teko", sans-serif;
+}
+@font-face {
+  font-family: 'Iropke Batang';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot);
+  src: url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.eot?#iefix) format('embedded-opentype'),
+       url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.woff) format('woff'),
+       url(//cdn.jsdelivr.net/font-iropke-batang/1.2/IropkeBatangM.ttf) format('truetype');
+}
+.center {
+    position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+}
+/* layout */
+#conents {}
+#section1 {height: 3300px;}
+#section2 {height: 20000px; background: blue;}
+#section3 {height: 1000px; background: red;}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* scroll */
+.scroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 10000;
+    width: 3vw;
+    height: 3vw;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 3vw;
+    color: #fff;
+    
+}
+
+/* sec1 */
+.sec1 {
+}
+.sec1 .scrolldown {
+    position: relative;
+}
+.sec1 .scrolldown p {
+    position: absolute;
+    top: 24vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    font-size: 0.8vw;
+    color: #6F7465;
+    font-family: sans-serif;
+}
+.sec1 .scrolldown img {
+    position: absolute;
+    top: 30vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 6vw;
+    color: #6F7465;
+}
+.sec1 h1 {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+    font-size: 4vw;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    color: #6F7465;
+}
+.sec1 .circle1 {
+    position: fixed;
+    left: -22vw; 
+    bottom: -22vw;
+    background: #E9E2D1; 
+    width: 60vw; 
+    height: 60vw;
+    border-radius: 50%;
+}
+.sec1 .circle1 svg {
+    position: absolute;
+    top: 0.2vw;
+    left: 1.2vw;
+    width: 22vw;  
+}
+.sec1 .circle2 {
+    position: fixed;
+    right: -22vw;
+    bottom: -22vw;
+    background: #E3BF64; 
+    width: 60vw; 
+    height: 60vw;
+    border-radius: 50%;
+}
+.sec1 .circle2 p,
+.sec1 .square p,
+.sec1 .triangle p {
+    padding-top: 10vw;
+    font-family: 'Iropke Batang';
+    font-size: 1vw;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+.sec1 .triangle p {
+    position: absolute;
+    top: 11vw;
+    right: -10vw;
+    width: 20vw;
+}
+.sec1 .square {
+    position: fixed;
+    bottom: 0.5vw;
+    right: -30vw;
+    width: 24vw;
+    height: 24vw;
+    background: #6F7465;   
+}
+.sec1 .triangle {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0.5vw;
+    right: -40vw;
+    width: 0px;height: 0px;
+    border-top:24vw solid none;
+    border-bottom:24vw  solid #E3BF64;
+    border-right: 17vw  solid transparent;
+    border-left: 17vw  solid  transparent;
+    transform: rotate(180deg);
+}
+
+/* sec2 */
+.sec2{
+
+}
+.sec2 .about_bg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #E9E2D1; 
+} 
+.sec2 .into_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: #fff;
+}
+.sec2 .about_sec1 {
+    position: fixed;
+    height: 100vw;
+} 
+.sec2 .about_sec1 .circle1,
+.sec2 .about_sec1 .circle2,
+.sec2 .about_sec1 .circle3,
+.sec2 .about_sec1 .circle4,
+.sec2 .about_sec1 .circle5,
+.sec2 .about_sec1 .circle6,
+.sec2 .about_sec1 .circle7 {
+    position: fixed;
+    border-radius: 50%;
+    background: #E9E2D1;
+} 
+.sec2 .about_sec1 .circle1 {
+    width: 6vw;
+    height: 6vw;
+}
+.sec2 .about_sec1 .circle2 {
+    width: 2vw;
+    height: 2vw;
+}
+.sec2 .about_sec1 .circle3 {
+    width: 20vw;
+    height: 20vw;
+}
+.sec2 .about_sec1 .circle4 {
+    width: 10vw;
+    height: 10vw;
+}
+.sec2 .about_sec1 .circle5 {
+    width: 5vw;
+    height: 5vw;
+}
+.sec2 .about_sec1 .circle6 {
+    width: 7vw;
+    height: 7vw;
+}
+.sec2 .about_sec1 .circle7 {
+    width: 3.5vw;
+    height: 3.5vw;
+}
+.sec2 .about_sec1 .circle_img img {
+    position: fixed;
+    top: 28.6%;
+    left: 40%;
+    width: 20vw;
+    height: 20vw;
+    z-index: -1;
+    border-radius: 50%;
+    border: 1px solid #E9E2D1;
+}
+.sec2 .about_sec1 .circle_img .text {
+    position: fixed;
+    top: 60%;
+    left: 54%;
+    width: 6vw;
+    height: 6vw;
+    z-index: -1;
+    background: #E9E2D1;
+    border-radius: 50%;
+}
+.sec2 .about_sec1 .circle_img .text p {
+    color: #064636;
+    font-size: 1.3vw;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 2.5vw;
+    text-transform: uppercase;
+}
+
+.sec2 .about_sec2 .circle_text1 .bg {
+    position: fixed;
+    bottom: 20vw;
+    left: 50vw;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    background: #E9E2D1;
+}
+.sec2 .about_sec2 .circle_text1 .bg p {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 16vw;
+    color: #064636;
+    font-size: 2vw;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Iropke Batang';
+}
+.sec2 .about_sec2 .circle_text1 .stroke {
+    position: fixed;
+    bottom: 20vw;
+    left: 50vw;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #E9E2D1;
+}
+.sec2 .about_sec2 .circle_text2 .bg {
+    position: fixed;
+    bottom: 20vw;
+    right: 38vw;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background: #E9E2D1;
+}
+.sec2 .about_sec2 .circle_text2 .bg p {
+    position: absolute;
+    top: 31%;
+    right: 17%;
+    width: 26vw;
+    color: #064636;
+    font-size: 2vw;
+    text-align: center;
+    line-height: 1.5;
+    font-family: 'Iropke Batang';
+}
+.sec2 .about_sec2 .circle_text2 .stroke {
+    position: fixed;
+    bottom: 20vw;
+    right: 38vw;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #E9E2D1;
+}
+
+.sec2 .about_sec3 .bg {
+    position: fixed;
+    bottom: 0;
+    left: -10vw;
+    width: 120%;
+    height: 20vw;
+    background: #E9E2D1;
+    border-radius: 50%;
+}
+.sec2 .about_sec3 .texts_wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vw;
+    background: #E9E2D1;
+}
+.sec2 .about_sec3 .texts {
+    margin-top: 16vw;
+}
+.sec2 .about_sec3 .texts p {
+    font-size: 6vw;
+    font-family: "teko", sans-serif;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-bottom: 5vw;
+}
+.html,
+.jquery,
+.illustrator {
+    color: #fff;
+}
+.css,
+.javascript,
+.photoshap {
+    color: #E9E2D1;
+    -webkit-text-stroke: 1px #fff;
+}
+
+
+/* sec3 */
+.sec3 .work_bg {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #6F7465;
+} 
+.sec3 .into_wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: #fff;
+}
+
